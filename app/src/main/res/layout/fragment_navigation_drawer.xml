@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navigation_background"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.cargc0044.grocit.fragment.NavigationDrawerFragment">
+
+
+    <ImageView
+        android:id="@+id/logoImgView"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/value_10dp"
+        android:layout_marginTop="@dimen/value_10dp"
+        android:clickable="true"
+        android:padding="@dimen/value_10dp"
+        android:src="@drawable/ic_promo_logo" />
+
+
+    <TextView
+        android:id="@+id/btnNotification"
+        style="@style/btnFillSelection_purpleStroke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/value_10dp"
+        android:layout_marginLeft="@dimen/value_15dp"
+        android:layout_marginRight="@dimen/value_15dp"
+        android:text="Notifications" />
+
+    <TextView
+        android:id="@+id/btnCart"
+        style="@style/btnDeepSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/value_10dp"
+        android:layout_marginLeft="@dimen/value_15dp"
+        android:layout_marginRight="@dimen/value_15dp"
+        android:layout_marginTop="@dimen/value_10dp"
+        android:text="Cart" />
+
+    <TextView
+        android:id="@+id/btnOrders"
+        style="@style/btnDeepSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/value_10dp"
+        android:layout_marginLeft="@dimen/value_15dp"
+        android:layout_marginRight="@dimen/value_15dp"
+        android:layout_marginTop="@dimen/value_10dp"
+        android:visibility="gone"
+        android:text="History" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ExpandableListView
+            android:id="@+id/navigationListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:groupIndicator="@null"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/signInSignUpView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/btnSignUp"
+                style="@style/btnFillSelection_purpleStroke"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/value_10dp"
+                android:layout_weight="1"
+                android:text="Sign Up" />
+
+            <TextView
+                android:id="@+id/btnSignIn"
+                style="@style/btnDeepSelection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/value_10dp"
+                android:layout_weight="1"
+                android:text="Sign In" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

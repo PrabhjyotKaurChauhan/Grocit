@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="235dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_promo_logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.50"
+             />
+
+        <TextView
+            android:id="@+id/promoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moto"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/purple_color" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="0dp"
+        android:layout_marginBottom="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/btnSignUps"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                style="@style/btnDeepSelection"
+                android:text="@string/sign_up_string"
+                android:layout_marginBottom="@dimen/value_20dp"
+                android:layout_alignParentLeft="true"
+                android:onClick="SignUps"
+                android:layout_alignLeft="@+id/btnSignIns"
+                />
+            <TextView
+                android:id="@+id/btnSignIns"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                style="@style/btnDeepSelection"
+                android:text="Sign In"
+                android:onClick="SignIns"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/btnSeeFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/btnFillSelection_purpleStroke"
+            android:text="Skip"
+            android:onClick="Skip"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/btnHaveAccountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:maxLines="2"
+            android:text="have an account?"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

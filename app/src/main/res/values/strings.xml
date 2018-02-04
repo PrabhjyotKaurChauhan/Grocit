@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">Grocit</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="search_hint">Search product</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="logo_desc">App logo</string>
+
+    <!-- Strings related to login -->
+    <string name="hint_email">email or phone number</string>
+    <string name="notification_string">Notifications</string>
+    <string name="sign_up_string">Sign Up</string>
+    <string name="reset_code">Reset</string>
+    <string name="hint_mobile_number_">Mobile Number</string>
+    <string name="hint_mobile_number2_">Mobile Number</string>
+
+    <string name="history_string">History</string>
+    <string name="hint_password">password</string>
+    <string name="hint_old_password">old password</string>
+    <string name="continue_string">Continue</string>
+    <string name="geopin">Punjab 144411</string>
+    <string name="locationz">LPU Uni-Hotel</string>
+    <string name="password_reset_heading">Password Reset</string>
+    <string name="password_reset_body">Your password has been reset</string>
+    <string name="new_password_body">Your password has been successfully changed</string>
+    <string name="password_reset_body2">Your reset code has been sent to you via SMS</string>
+    <string name="hint_retype_password">Retype Password</string>
+    <string name="new_user_string"><u>New user?</u></string>
+    <string name="sign_in_string">Sign In</string>
+    <string name="forget_password_string"><u>Forget Password?</u></string>
+    <string name="mobile_country_code">91</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_no_internet_connection">NoInternetConnection</string>
+    <string name="no_internet_text"><![CDATA[Please check your internet connection & try again]]></string>
+    <string name="retry_string">Retry</string>
+    <string name="cancel_string">Cancel</string>
+    <string name="no_internet">No Internet</string>
+    <string name="empty_filed">Filed is empty</string>
+    <string name="policy">By Creating Account, you agree to User Agreement</string>
+    <string name="GobackSign_in">Already have an account? Sign in</string>
+    <string name="moto">Shop from your nearest store</string>
+    <string name="action_settings">settings</string>
+    <string name="red">red</string>
+    <string name="orange">orange</string>
+    <string name="blue">blue</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="yes_string">Yes</string>
+    <string name="no_string">No</string>
+    <string name="exit_heading">Log out</string>
+    <string name="exit_text">Do you want to log out?</string>
+
+    <!-- Strings for Menu -->
+
+    <string-array name="list_contents">
+
+        <item>Profile</item>
+        <item>Add to Cart</item>
+        <item>Checkout</item>
+        <item>My Orders</item>
+        <item>Payment</item>
+        <item>Bonus</item>
+        <item>History</item>
+        <item>Help</item>
+        <item>Logout</item>
+
+
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_shopcategory">Shopcategory</string>
+    <string name="title_activity_shoplist">Shoplist</string>
+    <string name="exit_string">Exit</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="productgridtext">\u0020products >  </string>
+    <string name="categorygridviewtext">\u0020categories\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 \u0020\u0020 view all >  </string>
+    <string name="shoplisttext">\u0020view all ->  </string>
+    <string name="title_activity_notifications">notifications</string>
+    <string name="title_activity_checkout">checkout</string>
+
+    <!-- Strings related to login -->
+    <string name="alert">Failed to connect internet!</string>
+    <string name="invalid_mobile_number">Invalid mobile number</string>
+    <string name="invalid_email_address">Invalid email address</string>
+    <string name="password_mismatch">Password doesn\'t match</string>
+    <string name="profile_update_success">Profile updated successfully</string>
+    <string name="profile_update_failure">Profile update failed</string>
+    <string name="invalid_password">Password must be of 6 character</string>
+
+    <string name="number_order">Number of order : </string>
+    <string name="view_all"><u>view all</u><small>></small>\u0020\u0020</string>
+    <string name="order">Order</string>
+    <string name="my_order">Detail Oerder</string>
+    <string name="total_order">Total Order :</string>
+    <string name="clear_order">Clear all order</string>
+    <string name="clear_all_order">Do you want to clear your all order?</string>
+    <string name="clear_one_order">Do you want to clear this order?</string>
+    <string name="db_exist_alert">Do you want to remove your previous order?</string>
+    <string name="no_data">N\\A</string>
+
+    //Cart and ID
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Fruits</item>
+        <item>Vegitables</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_basket</item>
+    </array>
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_product_details">ProductDetailsActivity</string>
+
+    <!-- Strings for Menu -->
+
+
+
+    <string name="title_activity_product_detail">ProductDetail</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_cart">Cart</string>
+    <string name="title_activity_cartz">Cartz</string>
+    <string name="stores">\u0020\u0020STORES</string>
+    <string name="cats">\u0020\u0020CATEGORIES</string>
+    <string name="prods">\u0020\u0020PRODUCTS</string>
+    <string name="date">Set Date</string>
+    <string name="no_order_menu">No order</string>
+    <string name="confirm">Confirmation</string>
+    <string name="reservation">Reservation</string>
+    <string name="your_name">Your Name</string>
+    <string name="address">Your Address</string>
+    <string name="city">Your locality</string>
+    <string name="province">Your City</string>
+    <string name="email">Your Email</string>
+    <string name="number_of_people">Number of people</string>
+    <string name="have_account_string"><u>Already have an account?Login</u></string>
+    <string name="add_comment">Comment (Optional)</string>
+    <string name="time">Set Time</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="order_list">Order List</string>
+    <string name="send_reservation">Send</string>
+
+    <string name="form_alert">Please, complete the form first.</string>
+    <string name="no_call_feature">Sorry! Your device does not support calling feature!</string>
+    <string name="sending_alert">Sending data. Please wait &#8230;</string>
+    <string name="ok_alert">Your Order has been successfully sent.</string>
+    <string name="failed_alert">Your Order has not been sent.</string>
+    <string name="no_order">Your Cart is Empty, Please Order first.</string>
+    <string name="check_order_later">Check if you want to order later</string>
+    <string name="order_later">#Order later</string>
+    <string name="order_alert">You have not ordered yet</string>
+    <string name="title_activity_landing">LandingActivity</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="hotline_call_text">Are you sure you want to call Grocit Hot Line \'+917814122457\' ?</string>
+    <string name="hotline_call_heading">Hotline</string>
+    <string name="title_activity_profile_update">Update Profile</string>
+    <string name="update_string">Update</string>
+    <string name="title_activity_change_password">Change Password</string>
+    <string name="title_activity_forget_password">Forgot Password</string>
+    <string name="title_activity_verify_sms">Verify SMS Code</string>
+    <string name="title_activity_new_password">NewPassword</string>
+
+
+</resources>

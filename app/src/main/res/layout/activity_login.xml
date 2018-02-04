@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:id="@+id/crossImgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="20dp"
+            android:src="@drawable/ic_cross_normal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="224dp"
+            android:layout_height="224dp"
+            android:layout_centerInParent="true"
+            android:padding="30dp"
+            android:src="@drawable/ic_promo_logo" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:weightSum="1">
+
+        <com.cargc0044.grocit.util.FloatLabel
+            android:id="@+id/etMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/purple_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:background="@color/bar_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.cargc0044.grocit.util.FloatLabel
+                android:id="@+id/etPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_password"
+                android:inputType="text"
+                android:textColorHint="@color/purple_color" />
+
+            <ImageView
+                android:id="@+id/showPasswordImg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:clickable="true"
+                android:src="@drawable/ic_show_password" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:background="@color/bar_color" />
+
+
+        <TextView
+            android:id="@+id/btnSignIn"
+            style="@style/btnSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/sign_in_string" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10dp">
+
+            <TextView
+                android:id="@+id/btnForgotPasswordTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:maxLines="2"
+                android:text="@string/forget_password_string"
+                android:textColor="@color/purple_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/btnNewUserTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:maxLines="2"
+                android:text="@string/new_user_string"
+                android:textColor="@color/purple_color"
+                android:textSize="15sp"
+                android:layout_alignBottom="@+id/view"
+                android:layout_alignParentEnd="true" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/white"
+                android:id="@+id/view" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

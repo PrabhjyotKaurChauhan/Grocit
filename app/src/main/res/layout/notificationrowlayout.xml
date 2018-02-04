@@ -1,0 +1,26 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/textbackground"
+
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:background="@drawable/textbackground"
+        android:id="@+id/notification_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="notification heading"
+        android:textAppearance="@style/main"
+        />
+    <TextView
+        android:id="@+id/notification_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="notification details"
+        android:layout_below="@id/notification_heading"
+        android:textAppearance="@style/main"
+        />
+
+</RelativeLayout>

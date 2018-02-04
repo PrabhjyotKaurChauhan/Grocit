@@ -1,0 +1,27 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/textbackground">
+
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="shop Name"
+        android:textAppearance="@style/main"
+        />
+
+    <ImageView
+        android:id="@+id/category_image"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/category_name"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+</RelativeLayout>

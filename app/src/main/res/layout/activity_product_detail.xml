@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cargc0044.grocit.activity.MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e7e7e7">
+
+        <ScrollView
+            android:id="@+id/sclDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/parentView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/headingView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/detail_view_image_height"
+                    android:layout_margin="@dimen/value_10dp"
+                    android:background="@android:color/white"
+                    android:paddingLeft="@dimen/value_5dp"
+                    android:paddingRight="@dimen/value_5dp"
+                    android:paddingTop="@dimen/value_5dp">
+
+
+                    <ImageView
+                        android:id="@+id/detailHeadingImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/detail_view_image_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/loading" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/detail_view_image_gradient_layer_height"
+                        android:layout_alignBottom="@+id/detailHeadingImage"
+                        android:layout_alignLeft="@+id/detailHeadingImage"
+                        android:layout_alignRight="@+id/detailHeadingImage"
+                        android:background="@drawable/gradient_layer_white"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/ProductName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="30dp"
+                            android:text="Product"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+
+                        <TextView
+                            android:id="@+id/Price"
+                            style="@style/PriceNowButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="Price" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/statusView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headingView">
+
+                    <TextView
+                        android:id="@+id/txtText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Product"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtSubText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtText"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Status : "
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/available"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtText"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@id/txtSubText"
+                        android:layout_toRightOf="@id/txtSubText"
+                        android:text="available"
+                        android:textColor="@color/flatgreen"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/unavailable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtText"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@id/txtSubText"
+                        android:layout_toRightOf="@id/txtSubText"
+                        android:text="available"
+                        android:textColor="@color/flatred"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/infoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/statusView"
+                    android:layout_marginBottom="@dimen/value_20dp"
+                    android:layout_marginLeft="@dimen/value_30dp"
+                    android:layout_marginRight="@dimen/value_30dp"
+                    android:layout_marginTop="@dimen/value_10dp">
+
+
+                    <ImageView
+                        android:id="@+id/DescrImgView"
+                        android:layout_width="@dimen/detail_view_icon_height_width"
+                        android:layout_height="@dimen/detail_view_icon_height_width"
+                        android:layout_marginBottom="@dimen/value_20dp"
+                        android:layout_marginRight="@dimen/value_10dp"
+                        android:src="@drawable/ic_name" />
+
+                    <TextView
+                        android:id="@+id/DescriptionTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/DescrImgView"
+                        android:layout_toRightOf="@+id/DescrImgView"
+                        android:gravity="center_vertical"
+                        android:text="N/A" />
+
+                    <ImageView
+                        android:id="@+id/infoImgView"
+                        android:layout_width="@dimen/detail_view_icon_height_width"
+                        android:layout_height="@dimen/detail_view_icon_height_width"
+                        android:layout_below="@+id/DescriptionTV"
+                        android:layout_marginBottom="@dimen/value_20dp"
+                        android:layout_marginRight="@dimen/value_10dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/ic_tag" />
+
+                    <TextView
+                        android:id="@+id/infoTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/infoImgView"
+                        android:layout_below="@+id/DescriptionTV"
+                        android:layout_toRightOf="@+id/infoImgView"
+                        android:gravity="center_vertical"
+                        android:text="N/A" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/infoView"
+                    android:background="@color/detail_view_separator_bar_color" />
+
+                <View
+                    android:id="@+id/separator2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/separator"
+                    android:background="@color/detail_view_separator_bar_color"
+                    android:visibility="invisible" />
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/txtAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/alert"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_buy"
+            android:onClick="buy"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

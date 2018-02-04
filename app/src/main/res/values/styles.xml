@@ -1,0 +1,173 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+        <item name="android:actionMenuTextColor">@color/purple_color</item>
+        <item name="android:actionBarSize">56dp</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!--
+            @brief support library compatibility
+        -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarTabTextStyle">@style/MyActionBarTabText</item>
+        <item name="actionMenuTextColor">@color/purple_color</item>
+        <item name="actionBarSize">56dp</item>
+
+    </style>
+
+
+    <!--
+       @brief Actionbar style
+   -->
+    <style name="MyActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="background">@android:color/white</item>
+    </style>
+
+    <!--
+        @brief ActionBar title text
+    -->
+    <style name="MyActionBarTitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/purple_color_2</item>
+        <item name="android:textSize">@dimen/value_18sp</item>
+    </style>
+
+    <!--
+        @brief ActionBar tabs text styles
+    -->
+    <style name="MyActionBarTabText" parent="Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@color/purple_color</item>
+    </style>
+
+    <!--
+        @brief option button design used in fragment_detail_view.xml
+        Make necessary changes here
+    -->
+    <style name="optionButton" parent="@android:style/Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/btn_bg_option</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">@dimen/value_5dp</item>
+        <item name="android:layout_marginLeft">@dimen/value_10dp</item>
+        <item name="android:layout_marginRight">@dimen/value_10dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/value_13sp</item>
+    </style>
+
+    <style name="FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!--
+         button style with purple color (@color/purple_color) in idle state and
+        a darker purple color (@color/purple_color_2) in pressed state.
+    -->
+    <style name="btnSelection" parent="@android:style/Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/btn_bg_selection</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MyActionBarWidgetTheme" parent="@android:style/Theme.Holo">
+        <item name="android:textColorHint">@color/bar_color</item>
+    </style>
+
+    <!--
+      @brief button style with green color (@color/green_color_2) in idle state and
+      a darker green color (@color/green_color_3) in pressed state. Make necessary changes here
+  -->
+    <style name="btnDeepSelection" parent="@android:style/Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/btn_bg_deep_selection</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!--
+        @brief button style with green stroke in idle state and green color (@color/green_color_2)
+        in pressed state. Make necessary changes here
+    -->
+    <style name="btnFillSelection_purpleStroke" parent="@android:style/Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/btn_bg_fill_selection_purple_stroke</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@drawable/clickable_text_bg_2</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--
+       @brief button style for 'Rate Now' Button used in fragment_detail_view.xml
+   -->
+    <style name="PriceNowButton" parent="@android:style/Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/btn_bg_deep_selection_idle</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/value_5dp</item>
+        <item name="android:paddingBottom">@dimen/value_5dp</item>
+        <item name="android:paddingLeft">@dimen/value_10dp</item>
+        <item name="android:paddingRight">@dimen/value_10dp</item>
+        <item name="android:layout_marginLeft">@dimen/value_10dp</item>
+        <item name="android:layout_marginRight">@dimen/value_10dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/value_15sp</item>
+    </style>
+    <!--
+        @brief main grids text styles
+    -->
+
+    <style name="main" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/main</item>
+        <item name="android:textSize">@dimen/value_22dp</item>
+    </style>
+
+    <style name="category">
+        <item name="android:textColor">@color/main</item>
+        <item name="android:textSize">16dp</item>
+
+    </style>
+
+    <style name="btnFillSelection_whiteStroke" parent="@android:style/Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/btn_bg_fill_selection_white_stroke</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/value_10dp</item>
+        <item name="android:textColor">@drawable/clickable_text_bg_2</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+
+
+
+</resources>
